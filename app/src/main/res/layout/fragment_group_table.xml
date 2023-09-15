@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".GroupTable">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Группировка таблиц\n"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_below="@id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv2"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tЭлемент &lt;colgroup&gt; создает структурную группу столбцов, выделяя логически однородные ячейки. Группирует один или более столбцов для единого форматирования, позволяя применить стили к столбцам вместо того, чтобы повторять стили для каждой ячейки и для каждой строки."
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/tap"
+                android:layout_below="@id/tv2"
+                android:layout_alignParentEnd="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/tap"/>
+            <FrameLayout
+                android:id="@+id/videoview"
+                android:layout_below="@id/tap"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <VideoView
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+
+            <Button
+                android:layout_below="@id/videoview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonnext2"
+                android:background="@drawable/button"
+                android:text="Дальше"
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+
+            <Button
+                android:layout_below="@id/buttonnext2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonback2"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button"
+                android:text="Назад"
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+
+        </RelativeLayout>
+
+
+
+</ScrollView>

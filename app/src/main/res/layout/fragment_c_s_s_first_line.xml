@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSFirstLine">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Отступ первой строки"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСвойство text-indent задает отступ, применяемый к строкам встроенного содержимого в блоке. Отступ обрабатывается как поле, примененное к начальному краю линейного блока.\n\tЕсли в первой строке блочного элемента присутствует изображение, то оно сдвинется вместе с остальным текстом.\n\tСвойство наследуется."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tдлина/%: Размер отступа в виде абсолютной длины. Процентное значение вычисляется от собственной логической ширины блока-контейнера. Значение по умолчанию 0.\n\t
+each-line: Отступы затрагивают первую строку каждого блока-контейнера и каждую строку после принудительного разрыва строки (но не строки после с мягким переносом).\n\t
+hanging: Обратное преобразование. Все строки, кроме первой, будут с отступом.\n\t
+initial: Устанавливает значение свойства в значение по умолчанию.\n\t
+inherit: Наследует значение свойства от родительского элемента."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСинтаксис:\n\t
+text-indent: 5mm;\n\t
+text-indent: 20px;\n\t
+text-indent: 5%;\n\t
+text-indent: 2em each-line;\n\t
+text-indent: 2em hanging;\n\t
+text-indent: inherit;\n\t
+text-indent: initial;"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonend"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Завершить "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/buttonback7"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

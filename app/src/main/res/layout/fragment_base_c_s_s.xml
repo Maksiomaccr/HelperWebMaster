@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.BaseCSS">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Что такое CSS?"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/css_icon" />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tCSS (Cascading Style Sheets) — язык таблиц стилей, который позволяет прикреплять стиль (например, шрифты и цвет) к структурированным документам (например, документам HTML и приложениям XML)."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t Обычно CSS-стили используются для создания и изменения стиля элементов веб-страниц и пользовательских интерфейсов, написанных на языках HTML и XHTML, но также могут быть применены к любому виду XML-документа, в том числе XML, SVG и XUL."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/buttonnext"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:onClick="ChangeFragment"
+                android:text=" Дальше "
+                android:textAllCaps="false"
+                android:textColor="@color/ever_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+
+
+</ScrollView>

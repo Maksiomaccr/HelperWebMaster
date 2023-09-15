@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSClassesLink">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Псевдоклассы\nсостояний ссылок"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tБольшинство браузеров выделяют четыре основных состояния гиперссылок, каждому из которых соответствует свой псевдокласс селектора:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\ta:link - непосещённая ссылка.\n\t
+a:visited - посещённая ссылка, по которой уже выполнялся переход.\n\t
+a:hover - не нажатая ссылка, над которой находится указать мыши.\n\t
+a:active - нажатая ссылка, уоторая удерживается мышью"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tИспользуя псевдоклассы для форматирования каждого состояния ссылок, можно дать пользователям подсказки, по каким ссылкам он уже переходил, а по каким — ещё нет, например:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/lucidaconsole"
+            android:background="@drawable/console_style"
+            android:padding="10dp"
+            android:text="\ta:link {\n\t
+  color: #497DDD;\n\t
+  border-bottom: 1px dashed;\n\t
+}\n
+  a:visited {\n\t
+  color: #EF7D55;\n\t
+}\n
+a:hover {\n\t
+  color: #154088;\n\t
+  border-bottom: .07em solid;\n\t
+}\n
+a:active {\n\t
+  color: #497DDD;\n\t
+  border-bottom: 1px dashed;\n\t
+}"
+            android:textColor="@color/ever_white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tФорматировать ссылки нужно в указанной последовательности, в противном случае состояние стилей перестанет работать (в силу механизма каскадности)."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonnext"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Дальше "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSTextConversion">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Преобразование текста"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСвойство text-transform стилизует текст. Оно не влияет на базовое содержимое и не должно влиять на содержимое операции копирования и вставки простого текста.\n\t
+Свойство наследуется.
+"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tnone: Значение по умолчанию, означает отсутствие эффектов.\n\t
+capitalize: Изменяет написание первой буквы каждого слова в элементе, делая её прописной.\n\t
+uppercase: Выводит все слова в элементе прописными буквами.\n\t
+lowercase: Выводит все слова в элементе строчными буквами.\n\t
+initial: Устанавливает значение свойства в значение по умолчанию.\n\t
+inherit: Наследует значение свойства от родительского элемента."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСинтаксис:\n\t
+text-transform: none;\n\t
+text-transform: capitalize;\n\t
+text-transform: uppercase;"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonnext1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Далее "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/buttonback1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

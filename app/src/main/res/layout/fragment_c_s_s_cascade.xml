@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSCascade">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Наследование\n и каскад"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tНаследование является механизмом, с помощью которого определенные свойства передаются от предка к его потомкам. Спецификацией CSS предусмотрено наследование свойств, относящихся к текстовому содержимому страницы, таких как color, font, letter-spacing, line-height, list-style, text-align и т.д. Во многих случаях это удобно, так как не нужно задавать размер шрифта и семейство шрифтов для каждого элемента веб-страницы.
+Свойства, относящиеся к форматированию блоков, не наследуются. Это background, border, display, float и clear, height и width, margin, min-max-height и -width, outline, overflow, padding, position, text-decoration, vertical-align и z-index.
+"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tС помощью ключевого слова inherit можно принудить элемент наследовать любое значение свойства родительского элемента. Это работает даже для тех свойств, которые не наследуются по умолчанию."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСтили могут наследоваться от родительского элемента (наследуемые свойства или с помощью значения inherit)."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tПри определении стиля можно использовать любую комбинацию селекторов — селектор элемента, псевдокласса элемента, класса или идентификатора элемента."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lucidaconsole"
+            android:padding="10dp"
+            android:background="@drawable/console_style"
+            android:text="\tHTML: &lt;div id=&quot;wrap&quot; class=&quot;box clear&quot;&gt;&lt;/div&gt;\n\t
+CSS: div {border: 1px solid #eee;}\n\t
+ #wrap {width: 500px;}\n\t
+ .box {float: left;}\n\t
+ .clear {clear: both;}
+"
+            android:textColor="@color/ever_white"
+            android:textSize="17dp" />
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tКаскадирование — это механизм, который управляет конечным результатом в ситуации, когда к одному элементу применяются разные CSS-правила. Существует три критерия, которые определяют порядок применения свойств — правило !important, специфичность и порядок, в котором подключены таблицы стилей."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВес правила можно задать с помощью ключевого слова !important, которое добавляется сразу после значения свойства, например, span {font-weight: bold!important;}. Правило необходимо размещать в конец объявления перед закрывающей скобкой, без пробела. "
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tТакое объявление будет иметь приоритет над всеми остальными правилами. Это правило позволяет отменить значение свойства и установить новое для элемента из группы элементов в случае, когда нет прямого доступа к файлу со стилями."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonnext3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Дальше "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/buttonback3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSRGB">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Цвета модели RGB"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rgb" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tФормат значения RGB в шестнадцатеричном формате — это знак #, за которым сразу следуют три или шесть шестнадцатеричных символов. Трехзначная запись RGB #rgb преобразуется в шестизначную форму #rrggbb путем копирования цифр, а не путем добавления нулей. Например, #fb0 расширяется до #ffbb00. Это гарантирует, что белый #ffffff может быть указан в короткой записи #fff, и удаляет любые зависимости от глубины цвета дисплея."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tФормат значения RGB в функциональной нотации — rgb(, за которым следует разделенный запятыми список из трех числовых значений (либо трех целочисленных значений, либо трех процентных значений), за которыми следует символ ). Целочисленное значение 255 соответствует 100% и F или FF в шестнадцатеричной записи:\n\t rgb (255,255,255) = rgb (100%, 100%, 100%) = #FFF"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСимволы пробела допускаются вокруг числовых значений."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВсе цвета RGB указываются в цветовом пространстве sRGB. Пользовательские агенты могут различаться в точности, с которой они представляют эти цвета, но использование sRGB дает однозначное и объективно измеримое определение того, каким должен быть цвет.
+Значения за пределами диапазона устройства должны быть обрезаны или отображены в известном диапазоне: значения красного, зеленого и синего необходимо изменить, чтобы они попадали в диапазон, поддерживаемый устройством. Некоторые устройства, например принтеры, имеют диапазоны, отличные от sRGB, поэтому некоторые цвета за пределами диапазона 0..255 sRGB будут представимы (внутри диапазона устройства) и будут отображаться.
+"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСинтаксис:\n\t
+color: #fb0;\n\t
+color: #ffbb00;\n\t
+color: rgb(255,0,0);\n\t
+color: rgb(100%, 0%, 0%);"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonnext1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Далее "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/buttonback1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

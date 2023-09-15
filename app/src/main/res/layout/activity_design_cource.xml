@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Design.DesignCource">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/DesignTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Веб-дизайн"
+            android:textColor="@color/ever_white"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@null"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/DesignTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/buttonback"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="@color/card_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DesignTitle">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="Принципы"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/sart1"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/starts"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title1" />
+
+                <TextView
+                    android:id="@+id/theory1"
+
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="Теория"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title1"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/done1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="59dp"
+                    android:background="@drawable/done"
+                    app:layout_constraintStart_toEndOf="@+id/theory1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar1"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:indeterminateOnly="false"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circel"
+                    android:rotation="-90"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:progress="0" />
+
+                <TextView
+                    android:id="@+id/text_view_progress1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_bar1"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar1"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar1"
+                    app:layout_constraintTop_toTopOf="@+id/progress_bar1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/card_view2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="Цвета"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/sart2"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/starts"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title2" />
+
+                <TextView
+                    android:id="@+id/theory2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="Теория"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title2"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/done2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="59dp"
+                    android:background="@drawable/done"
+                    app:layout_constraintStart_toEndOf="@+id/theory2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar2"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:indeterminateOnly="false"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circel"
+                    android:rotation="-90"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:progress="0" />
+
+                <TextView
+                    android:id="@+id/text_view_progress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_bar2"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar2"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar2"
+                    app:layout_constraintTop_toTopOf="@+id/progress_bar2"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view2">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="Контент"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/sart3"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/starts"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title3" />
+
+                <TextView
+                    android:id="@+id/theory3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="Теория"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title3"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/done3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="59dp"
+                    android:background="@drawable/done"
+                    app:layout_constraintStart_toEndOf="@+id/theory3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar3"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:indeterminateOnly="false"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circel"
+                    android:rotation="-90"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:progress="0" />
+
+                <TextView
+                    android:id="@+id/text_view_progress3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_bar3"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar3"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar3"
+                    app:layout_constraintTop_toTopOf="@+id/progress_bar3"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view3">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="Главные правила"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/sart4"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/starts"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title4" />
+
+                <TextView
+                    android:id="@+id/theory4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="Теория"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title4"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/done4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="59dp"
+                    android:background="@drawable/done"
+                    app:layout_constraintStart_toEndOf="@+id/theory4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar4"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:indeterminateOnly="false"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circel"
+                    android:rotation="-90"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:progress="0" />
+
+                <TextView
+                    android:id="@+id/text_view_progress4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_bar4"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar4"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar4"
+                    app:layout_constraintTop_toTopOf="@+id/progress_bar4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

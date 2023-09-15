@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".HTMLList">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="HTML-списки"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/list"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tHTML-списки используются для группировки связанных между собой фрагментов информации. Существует три вида списков:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv3"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\t1. Маркированный список.\n\t2. Нумерованный список.\n\t3. Список определений.
+"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv4"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tКаждый список представляет собой контейнер, внутри которого располагаются элементы списка или пары термин-определение."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv5"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tЭлементы списка ведут себя как блочные элементы, располагаясь друг под другом и занимая всю ширину блока-контейнера. Каждый элемент списка имеет дополнительный блок, расположенный сбоку, который не участвует в компоновке."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonnext"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+</ScrollView>

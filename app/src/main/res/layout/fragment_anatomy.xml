@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".Anatomy">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Анатомия\n HTML-документа "
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anatomy"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tПри создании html-документа необходимо прописать следующую структуру:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv3"
+                android:fontFamily="@font/lucidaconsole"
+                android:padding="10dp"
+                android:background="@drawable/console_style"
+                android:text="&lt;!DOCTYPE html&gt;\n
+ &lt;html&gt;\n
+   &lt;head&gt;\n
+     &lt;meta charset=&quot;utf-8&quot;&gt;\n
+    &lt;title&gt; Моя страница &lt;/title&gt;\n
+   &lt;/head&gt;\n
+   &lt;body&gt;\n
+   ...\n
+   &lt;/body&gt;\n
+ &lt;/html&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv4"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t &lt;!DOCTYPE html&gt; — доктайп. В прошлом, когда HTML был молод (около 1991/1992), доктайпы должны были выступать в качестве ссылки на набор правил, которым HTML страница должна была следовать, чтобы считаться хорошим HTML, что могло означать автоматическую проверку ошибок и другие полезные вещи. Однако в наши дни, никто не заботится об этом, и они на самом деле просто исторический артефакт, который должен быть включён для того, чтобы все работало правильно. На данный момент это все, что вам нужно знать."
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv5"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t &lt;html&gt;&lt;/html&gt; — элемент &lt;html&gt;. Этот элемент оборачивает весь контент на всей странице, и иногда известен как корневой элемент."
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv6"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t &lt;head&gt;&lt;/head&gt; — элемент &lt;head&gt;. Этот элемент выступает в качестве контейнера для всего, что вы пожелаете включить на HTML страницу, но не являющегося контентом, который вы показываете пользователям вашей страницы. К ним относятся такие вещи, как ключевые слова и описание страницы, которые будут появляться в результатах поиска, CSS стили нашего контента, кодировка и многое другое."
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv7"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t &lt;meta charset=&quot;utf-8&quot;&gt; — этот элемент устанавливает UTF-8 кодировку вашего документа, которая включает в себя большинство символов из всех известных человечеству языков. По сути, теперь документ может обрабатывать любой текстовый контент, который вы в него вложите. Нет причин не устанавливать её, так как это может помочь избежать некоторых проблем в дальнейшем."
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv8"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t &lt;title&gt;&lt;/title&gt; — элемент &lt;title&gt;. Этот элемент устанавливает заголовок для вашей страницы, который является названием, появляющимся на вкладке браузера загружаемой страницы, и используется для описания страницы, когда вы добавляете её в закладки/избранное."
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv9"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t &lt;body&gt;&lt;/body&gt; — элемент &lt;body&gt;. В нем содержится весь контент, который вы хотите показывать пользователям, когда они посещают вашу страницу, будь то текст, изображения, видео, игры, проигрываемые аудиодорожки или что-то ещё."
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+
+            <Button
+                android:id="@+id/buttonend"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Завершить "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:id="@+id/buttonback4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

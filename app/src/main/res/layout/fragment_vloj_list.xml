@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".ListO">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Вложенный список\n(многоуровневый)"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tЛюбой список может быть вложен в другой. Внутри элемента &lt;li&gt; допустимо создание вложенного списка, или списка второго уровня. Для вложения списка опишите новый список внутри элемента &lt;li&gt; уже имеющегося списка. При вложении одного маркированного списка в другой браузер автоматически меняет стиль маркера для списка второго уровня. Любой список может быть вложен в другой."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv3"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:drawableRight="@drawable/click"
+                android:paddingStart="10dp"
+                android:text="\t&lt;ul&gt;\n\t &lt;li&gt;Пункт 1&lt;/li&gt;\n\t &lt;li&gt;Пункт 2&lt;/li&gt;\n\t  &lt;ul&gt;\n\t   &lt;li&gt;Подпункт 2.1&lt;/li&gt;\n\t   &lt;li&gt;Подпункт 2.2&lt;/li&gt;\n\t    &lt;ul&gt;\n\t     &lt;li&gt;Подпункт 2.2.1&lt;/li&gt;\n\t     &lt;li&gt;Подпункт 2.2.2&lt;/li&gt;\n\t    &lt;/ul&gt;\n\t   &lt;li&gt;Подпункт 2.3&lt;/li&gt;\n\t  &lt;/ul&gt;\n\t &lt;li&gt;Пункт 3&lt;/li&gt;\n\t&lt;/ul&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tТакже можно и создавать многоуровневые нумерованные списки, используя при этом &lt;ol&gt; вместо &lt;ul&gt;. Необходимо использовать атрибуты css создания список с вложенной нумерацией"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonnext5"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonback5"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

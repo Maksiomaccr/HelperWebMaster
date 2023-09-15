@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".CSS.CSSCurrentColor">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="currentColor"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tCSS1 и CSS2 определили начальное значение свойства border-color как значение свойства color, но не определили соответствующее ключевое слово. Это упущение было распознано SVG, поэтому SVG 1.0 ввел значение currentColor для свойств fill, stroke, stop-color, flood-color и lighting-color. CSS3 расширяет значение цвета, добавляя ключевое слово currentColor, чтобы разрешить его использование со всеми свойствами, которые принимают значение color. Это упрощает определение этих свойств в CSS3.
+Используемое значение ключевого слова currentColor — это вычисленное значение свойства color. Если ключевое слово установлено в самом свойстве color, оно рассматривается как color: inherit.
+"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tПример:"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lucidaconsole"
+            android:background="@drawable/console_style"
+            android:padding="10dp"
+            android:text="\tbody {color: grey;}\n\tdiv {border: 1px solid\n\tcurrentColor;}
+"
+            android:textColor="@color/ever_white"
+            android:textSize="17dp" />
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/buttonend"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Завершить "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/buttonback5"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+</ScrollView>

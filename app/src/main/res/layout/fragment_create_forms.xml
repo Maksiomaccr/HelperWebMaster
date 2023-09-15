@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".CreateForms">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Создание формы"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/createforms"
+                android:layout_gravity="center"/>
+
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tОснову любой формы составляет элемент &lt;form&gt;...&lt;/form&gt;. Он не предусматривает ввод данных, так как является контейнером, удерживая вместе все элементы управления формы – поля."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tАтрибуты этого элемента содержат информацию, общую для всех полей формы, поэтому в одну форму нужно включать поля, объединенные логически."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\taccept-charset. Значение атрибута представляет собой разделенный пробелами список кодировок символов, которые будут использоваться для отправки формы."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\taction. Обязательный атрибут, который указывает url обработчика формы на сервере, которому передаются данные. Представляет из себя файл (например, action.php), в котором описано, что нужно делать с данными формы. Если значение атрибута не будет указано, то после перезагрузки страницы элементы формы примут значения по умолчанию.\n\tВ случае, если вся работа будет выполняться на стороне клиента сценариями JavaScript, то для атрибута action можно указать значение #."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tautocomplete. Отвечает за запоминание введенных в текстовое поле значений и автоподстановку их при последующем вводе:\n\ton — означает, что поле не защищено, и его значение можно сохранять и извлекать.\n\toff — отключает автозаполнение для полей форм."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tmethod. Задает способ передачи данных формы.\n\tМетод get передает данные на сервер через адресную строку браузера.\n\tМетод post применяется для пересылки данных больших объемов, а также конфиденциальной информации и паролей. Данные, отправляемые с помощью этого метода, не видны в заголовке URL, так как они содержатся в теле сообщения."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tname. Задает имя формы, которое будет использоваться для доступа к элементам формы через сценарии."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\ttarget. Указывает окно, в которое будет направлена информация:\n\t_blank — новое окно\n\t_self — тот же фрейм\n\t_parent — родительский фрейм (если он существует, если нет — то в текущий)\n\t_top — окно верхнего уровня по отношению к данному фрейму. Если вызов происходит не из дочернего фрейма, то в тот же фрейм."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonnext1"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonback1"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

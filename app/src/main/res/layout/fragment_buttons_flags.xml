@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".ButtonsFlags">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Кнопки, флажки и переключатели"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/switches" />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tЭлемент &lt;button&gt;...&lt;/button&gt; создает кликабельные кнопки. В отличие от кнопок, созданных &lt;input&gt;, внутрь элемента &lt;button&gt; можно поместить контент — текст или изображение."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tДля корректного отображения элемента &lt;button&gt; разными браузерами нужно указывать атрибут type, например, &lt;button type=&quot;submit&quot;&gt;&lt;/button&gt;."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tКнопки позволяют пользователям передавать данные в форму, очищать содержимое формы или предпринимать какие-либо другие действия. Можно создавать границы, изменять фон и выравнивать текст на кнопке.\n"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <View
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\n\tФлажки в формах задаются с помощью конструкции &lt;input type=&quot;checkbox&quot;&gt;, а переключатель — при помощи &lt;input type=&quot;radio&quot;&gt;."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tФлажков, в отличие от переключателей, в одной форме может быть установлено несколько. Если для флажков указан атрибут checked, то при загрузке станицы на соответствующих полях формы флажки уже будут установлены.\n"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <View
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\n\tЭлемент &lt;label&gt; применяется при реализации выбора с помощью переключателей и флажков. Можно выбрать нужный пункт, просто щелкая кнопкой мыши на тексте, связанном с ним. Для этого нужно поместить &lt;input&gt; внутрь элемента &lt;label&gt;."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/buttonnext6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/buttonback6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+
+
+</ScrollView>

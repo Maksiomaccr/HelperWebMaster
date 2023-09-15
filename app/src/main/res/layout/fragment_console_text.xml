@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".ConsoleText">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Элементы для ввода &quot;компьютерного&quot; текста "
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:background="@drawable/console" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tHTML содержит несколько элементов для определения пользовательского ввода и компьютерного кода:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\t&lt;kbd&gt;. Отмечает фрагмент как вводимый пользователем с клавиатуры."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\t&lt;samp&gt;. Применяется для выделения результата, полученного в ходе выполнения программы."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\t&lt;pre&gt;. Позволяет представлять текст точно так же, как было написано в html-файле. "
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\t&lt;code&gt;. Служит для выделения фрагментов программного кода. Например:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:paddingStart="10dp"
+                android:text="\tПримечание: для представления нескольких строк кода, оберните элемент &lt;code&gt; в элемент &lt;pre&gt;. Элемент &lt;code&gt; сам по себе представляет только один элемент кода или строку кода."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\t&lt;var&gt;. Выделяет имена переменных, отображая текст курсивом"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonnext5"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonback4"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".Atributes">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Атрибуты"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tЭлементы также могут содержать атрибуты:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv3"
+                android:drawableRight="@drawable/click"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:background="@drawable/console_style"
+                android:text="\t &lt;a href=&quot;https://vk.com/..&quot;&gt; Вконтакте &lt;/a&gt;\n \t &lt;button disabled&gt; Нельзя нажимать &lt;/button&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv4"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t Атрибуты — это свойства тега. В приведённом примере атрибутами являются: href и disabled. С помощью них мы задаём параметры тега. Атрибуты должны иметь имя, знак равенства и последующее значение атрибута, заключенное в кавычки, как в первом случае, где href является именем атрибута, а ссылка в кавычках – значением атрибута. "
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv5"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t Но не все атрибуты должны иметь значения. Во втором случае disabled является атрибутом, который отключает параметр, а при отсутствии этого атрибута ничего не меняется."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <Button
+                android:id="@+id/buttonnext4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <Button
+                android:id="@+id/buttonback3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+</ScrollView>

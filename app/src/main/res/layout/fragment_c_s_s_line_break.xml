@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSLineBreak">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Разрыв строки\nи границы слов"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/line_breake"
+            android:layout_gravity="center"/>
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tКогда содержимое на строчном уровне разбивается на строки, оно разбивается на линейные блоки. Такое разбиение называется разрыв строки."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tКогда строка прерывается из-за явных элементов управления разрывом строки, например, символа новой строки или тега &lt;br&gt;, начала или конца блока — это принудительный разрыв строки."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tЕсли строка обрывается из-за переноса содержимого, когда браузер создает необязательные разрывы строк, чтобы вписать содержимое — это мягкий перенос.\n\tСвойство word-break определяет возможности мягкого переноса между буквами, т.е. когда допустимо разбивать строки текста. В частности, оно контролирует, существует ли возможность мягкого переноса между смежными типографскими буквенными единицами и/или цифрами. Это не влияет на правила, регулирующие возможности мягкого переноса, созданные пробелами."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tnormal: Слова разрываются в соответствии с их обычными правилами. Значение по умолчанию.\n\t
+break-all: Разрыв допускается в пределах слов. Перенос слов не применяется.\n\t
+keep-all: Запрещает разрывы между парами символов.\n\t
+initial: Устанавливает значение свойства в значение по умолчанию.\n\t
+inherit: Наследует значение свойства от родительского элемента.\n\t"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСинтаксис:\n\t
+word-break: normal;'\n\t
+word-break: break-all;\n\t
+word-break: keep-all;\n\t
+word-break: inherit;\n\t
+word-break: initial;"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСвойство line-break определяет правила переноса строк, применяемых внутри элемента, в частности то, как перенос взаимодействует со знаками препинания и символами.\n\t
+auto: Браузер определяет набор используемых ограничений на разрыв строки, которые могут варьироваться в зависимости от длины линии, например, использовать менее строгий набор правил разрыва строки для коротких строк. Значение по умолчанию.\n\t
+loose: Разбивает текст, используя наименее ограничивающий набор правил переноса строк. Обычно используется для коротких строк, например, в газетах.\n\t
+normal: Разбивает текст, используя наиболее распространенный набор правил переноса строк.\n\t
+strict: Разбивает текст, используя строгий набор правил переноса строк.\n\t
+initial: Устанавливает значение свойства в значение по умолчанию.\n\t
+inherit: Наследует значение свойства от родительского элемента.\n\t"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСинтаксис:\n\t
+line-break: auto;\n\t
+line-break: loose;\n\t
+line-break: normal;\n\t
+line-break: strict;\n\t"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonnext4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Далее "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/buttonback4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".GroupForms">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Группировка элементов формы\n"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tЭлемент &lt;fieldset&gt;...&lt;/fieldset&gt; предназначен для группировки элементов, связанных друг с другом, разделяя таким образом форму на логические фрагменты."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tКаждой группе элементов можно присвоить название с помощью элемента &lt;legend&gt;, который идет сразу за открывающим тегом элемента &lt;fieldset&gt;. Название группы проявляется слева в верхней границе &lt;fieldset&gt;. Например, если в элементе &lt;fieldset&gt; хранится контактная информация:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/console_style"
+                android:drawableRight="@drawable/click"
+                android:fontFamily="@font/lucidaconsole"
+                android:paddingStart="10dp"
+                android:text="\t&lt;form&gt;\n\t &lt;fieldset&gt;\n\t  &lt;legend&gt;Контактная информация&lt;/legend&gt;\n\t  &lt;p&gt;&lt;label for=&quot;name&quot;&gt;Имя&lt;em&gt;*&lt;/em&gt;&lt;/label&gt;&lt;input type=&quot;text&quot; id=&quot;name&quot;&gt;&lt;/p&gt;\n\t  &lt;p&gt;&lt;label for=&quot;email&quot;&gt;E-mail&lt;/label&gt;&lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;&lt;/p&gt;\n\t &lt;/fieldset&gt;\n\t&lt;p&gt;&lt;input type=&quot;submit&quot; value=&quot;Отправить&quot;&gt;&lt;/p&gt;\n\t&lt;/form&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tdisabled. Если атрибут присутствует, то группа связанных элементов формы, находящихся внутри контейнера &lt;fieldset&gt;, отключены для заполнения и редактирования. Используется для ограничения доступа к некоторым полям формы, содержащих ранее введенные данные. Атрибут используется без указания значения — &lt;fieldset disabled&gt;."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tform. Значение атрибута должно быть равно атрибуту id элемента &lt;form&gt; в этом же документе. Указывает на одну или несколько форм, к которым принадлежит данная группа элементов. На данный момент атрибут не поддерживается ни одним браузером."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tname. Определяет имя, которое будет использоваться для ссылки на элементы в JavaScript, или для ссылки на данные формы после заполнения и отправки формы. Является аналогом атрибута id."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonnext2"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonback2"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

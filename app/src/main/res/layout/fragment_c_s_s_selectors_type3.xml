@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSSelectorsType3">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Виды селекторов (продолжение)"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСестринский селектор: Сестринские отношения возникают между элементами, имеющими общего родителя. Селекторы сестринских элементов позволяют выбрать элементы из группы элементов одного уровня:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\th1 + p — выберет все первые абзацы, идущие непосредственно за любым элементом &lt;h1&gt;, не затрагивая остальные абзацы;\n\t
+h1 ~ p — выберет все абзацы, являющиеся сестринскими по отношению к любому заголовку h1 и идущие сразу после него.
+"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСелектор атрибута: выбирает элементы на основе имени атрибута или значения атрибута:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t[атрибут] — все элементы, содержащие указанный атрибут, [alt] — все элементы, для которых задан атрибут alt;\n\t
+селектор[атрибут] — элементы данного типа, содержащие указанный атрибут, img[alt] — только картинки, для которых задан атрибут alt;\n\t
+селектор[атрибут=&quot;значение&quot;] — элементы данного типа, содержащие указанный атрибут с конкретным значением, img[title=&quot;flower&quot;] — все картинки, название которых содержит слово flower;\n\t
+селектор[атрибут~=&quot;значение&quot;] — элементы частично содержащие данное значение, например, если для элемента задано несколько классов через пробел, p[class~=&quot;feature&quot;] — абзацы, имя класса которых содержит feature;\n\t
+селектор[атрибут|=&quot;значение&quot;] — элементы, список значений атрибута которых начинается с указанного слова, p[class|=&quot;feature&quot;] — абзацы, имя класса которых feature или начинается на feature;\n\t
+селектор[атрибут^=&quot;значение&quot;] — элементы, значение атрибута которых начинается с указанного значения, a[href^=&quot;http://&quot;] — все ссылки, начинающиеся на http://;\n\t
+селектор[атрибут$=&quot;значение&quot;] — элементы, значение атрибута которых заканчивается указанным значением, img[src$=&quot;.png&quot;] — все картинки в формате png;\n\t
+селектор[атрибут*=&quot;значение&quot;] — элементы, значение атрибута которых содержит в любом месте указанное слово, a[href*=&quot;book&quot;] — все ссылки, название которых содержит book."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonnext2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Далее "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/buttonback2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

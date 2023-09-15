@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".OtnsPath">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Относительный путь\n"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <ImageView
+                android:layout_width="320dp"
+                android:layout_height="260dp"
+                android:layout_gravity="center"
+                android:background="@drawable/paths"/>
+
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tПредположим, что каждое изображение в каталоге images нужно вставить в соответствующие страницы home.html, products.html, contact.html. Для того что бы вставить изображение на страницу &quot;home.html&quot;, нужно прописать путь, где расположено изображение."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:text="\t&lt;img src=&quot;images/home.png&quot;&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <ImageView
+                android:layout_width="320dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:background="@drawable/paths2"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tОтносительный путь содержит следующие компоненты:\n\t1. Папка (имя папки, указывающей путь к файлу).\n\t2. Файл (имя файла)."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tЕсли же страница находится не в корневой папке сайте, а в подкаталоге, и в неё необходимо вставить изображение, то код страницы products.html будет выглядеть так:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:background="@drawable/console_style"
+                android:fontFamily="@font/lucidaconsole"
+                android:text="\t&lt;img src=&quot;../images/products.png&quot;&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonnext5"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonback5"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

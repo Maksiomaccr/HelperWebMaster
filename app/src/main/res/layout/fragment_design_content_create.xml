@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Design.DesignContentCreate">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Этапы проектирования контента"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tПонимание вашего контента начинается со знания вашей аудитории и миссии сайта. С кем вы общаетесь и что вы хотите им сказать или что вы хотите, чтобы они сделали? Вы должны ответить на эти вопросы прежде, чем остальная работа может пойти под откос."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tПосле этого важно поговорить о приоритетах. Важно установить ясные, измеримые цели."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\tОпределение структуры"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tРасположите элементы контента по шкале от 1 до 10. Это установит набор приоритетов для сайта и дизайна. Это также покажет слабые стороны контента, которые требуют доработки.\n\t
+Когда приоритеты расставлены, настало время собрать части контента (если они уже есть) или начать создавать каждый из элементов, которые потребуются для дизайна сайта. Определите образ вашего сайта и задайте тон для его индивидуальности."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\tСоздание визуального плана"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВизуальный план должен совпадать с конечной целью контента. Любое несоответствие может вызвать проблемы у пользователя.\n\t
+Во время разработки визуального плана, вы должны советоваться с командой. Когда идея сформулирована, обратитесь к ним за фидбэком. Исправьте и обсудите еще раз. Будучи дизайнером, вы не должны прятаться во время создания дизайна целого сайта, а потом показывать «готовый продукт». Каждая часть должна быть результатом совместных усилий всей контент-команды.\n\t
+Этот процесс может быть очень кропотливым первые несколько раз. Он может вытащить вас из зоны комфорта. Но в конце вы получите лучший, более удобный сайт."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\tАнализ и поддержка"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tПостоянный анализ и поддержка контента и дизайна помогает сайту оставаться на высоком уровне и удовлетворять потребности его пользователей. Контент-команда должна планировать проверку этих данных и собираться вместе для отслеживания и внесения необходимых изменений."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/buttonend"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Завершить "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <Button
+            android:id="@+id/buttonback2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

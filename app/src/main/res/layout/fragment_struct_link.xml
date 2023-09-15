@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".StructLink">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Структура ссылки\n"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+
+            <TextView
+                android:layout_below="@id/title"
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tГиперссылки создаются с помощью элемента &lt;a&gt;&lt;/a&gt;. Внутрь помещается текст, который будет отображаться на веб-странице. Текст ссылки отображается в браузере с подчёркиванием, цвет шрифта — синий, при наведении на ссылку курсор мыши меняет вид."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_below="@id/tv2"
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tОбязательным параметром элемента &lt;a&gt; является атрибут href, который задает URl-адрес веб-страницы. Например:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_below="@id/tv3"
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/click"
+                android:paddingStart="10dp"
+                android:background="@drawable/console_style"
+                android:fontFamily="@font/lucidaconsole"
+                android:text="\t&lt;a href=«http://site.ru»&gt;Ссылка&lt;/a&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_below="@id/tv4"
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tСсылка состоит из двух частей — указателя и адресной части. Указатель ссылки представляет собой фрагмент текста или изображение, видимые для пользователя. Адресная часть ссылки пользователю не видна, она представляет собой адрес ресурса, к которому необходимо перейти."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_below="@id/tv5"
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tАдресная часть ссылки состоит из URl — унифицированный адрес ресурса. При создании адресов для разделения слов между собой рекомендуется использовать дефис, а не символ подчёркивания."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_below="@id/tv6"
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tНемного о атрибутах ссылки."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginBottom="20dp"/>
+            <ImageView
+                android:id="@+id/tap"
+                android:layout_below="@id/tv7"
+                android:layout_alignParentEnd="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/tap"/>
+            <FrameLayout
+                android:id="@+id/videoview"
+                android:layout_below="@id/tap"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <VideoView
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+
+
+
+            <Button
+                android:layout_below="@id/videoview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonnext1"
+                android:background="@drawable/button"
+                android:text="Дальше"
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+
+            <Button
+                android:layout_below="@id/buttonnext1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonback1"
+                android:background="@drawable/button"
+                android:text="Назад"
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"
+                />
+
+        </RelativeLayout>
+
+
+
+</ScrollView>

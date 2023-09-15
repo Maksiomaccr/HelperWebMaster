@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".CSS.CSSAlignment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Выравнивание\n и выключка строк"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:background="@drawable/align" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВыравнивание и выключка строк контролируют, как встроенный контент распределяется в линейном блоке."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tБлок текста представляет собой набор линейных блоков. Свойство text-align задает свойства text-align-all и text-align-last и описывает, как блоки на уровне строки в каждом линейном блоке выравниваются относительно начальной и конечной сторон линейного блока. Значения, отличные от justify-all или match-parent, присваиваются text-align-all и сбрасываются в text-align-last на auto."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tstart: Содержимое на уровне строки выравнивается по начальному краю линейного блока. Значение по умолчанию.\n\t
+end: Содержимое на уровне строки выравнивается по конечному краю линейного блока.\n\t
+left: Содержимое на уровне строки выравнивается по левому краю строки линейного блока. В вертикальных системах письменности это будет физический верх или низ, в зависимости от ориентации текста.\n\t
+right: Содержимое на уровне строки выравнивается по правому краю строки линейного блока. В вертикальных системах письменности это будет физический верх или низ, в зависимости от ориентации текста.\n\t
+center: Содержимое на уровне строки центрируется внутри линейного блока.\n\t
+justify: Текст выравнивается по ширине линейного блока, чтобы точно заполнить поле строки, прижимаюсь к левому и правому краям родительского элемента. Если иное не указано в text-align-last, последняя строка перед принудительным разрывом или конец блока выравнивается по началу. Пробелы между словами и буквами распределяются таким образом, чтобы длина всех строк была равна. Разные браузеры могут увеличить как отступы между словами, так и интервалы между буквами.\n\t
+justify-all: Устанавливает text-align-all и text-align-last в justify, также выравнивая последнюю строку.\n\t
+match-parent: Значение ведет себя так же, как inherit за исключением того, что унаследованное значение start или end интерпретируется относительно значения direction (или исходного содержащего блока, если нет родителя) и приводит к вычисленному значению left или right.\n\t
+inherit: Наследует значение свойства от родительского элемента."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСвойство overflow-wrap (или его устаревшее имя word-wrap) указывает, может ли неразрывная строка прерваться в неразрешенных точках, чтобы предотвратить переполнение линейного блока. Работает в том случае, когда свойство white-space разрешает перенос.\n\tСвойство наследуется."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСвойство text-align-all — сокращенный вариант свойства text-align определяет выравнивание всех строк содержимого в контейнере блока, за исключением последних строк, переопределенных значением text-align-last. Принимает значения start, end, left, right, center, justify и match-parent.\n\tСвойство наследуется."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСвойство text-align-last описывает, как выравнивается последняя строка блока или строки непосредственно перед принудительным разрывом строки.\n\tЕсли задано значение auto, содержимое в соответствующей строке выравнивается по text-align-all, если только для text-align-all не настроено justify — в этом случае оно выравнивается по началу блока. Все остальные значения интерпретируются как описано для text-align.\n\tПринимает значения auto, start, end, left, right, center, justify и match-parent.\n\tСвойство наследуется."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСинтаксис:\n\t
+text-align-last: auto;\n\t
+text-align-last: start;\n\t
+text-align-last: end;\n\t
+text-align-last: left;\n\t
+text-align-last: right;\n\t
+text-align-last: center;\n\t
+text-align-last: justify;\n\t
+text-align-last: match-parent;"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/buttonnext6"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Далее "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/buttonback6"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".OtnsPath">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Якоря"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tЯкоря, или внутренние ссылки, создают переходы на различные разделы текущей веб-страницы, позволяя быстро перемещаться между разделами. Это оказывается очень удобным в случае, когда на странице слишком много текста. Внутренние ссылки также создаются при помощи элемента &lt;a&gt; с разницей в том, что атрибут href содержит имя указателя — так называемый якорь, а не URl-адрес. Перед именем указателя всегда ставится знак #. Например:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:text="\t&lt;h1&gt;Времена года&lt;/h1&gt;\n\t&lt;h2&gt;Оглавление&lt;/h2&gt;\n\t&lt;a href=&quot;#p1&quot;&gt;Лето&lt;/a&gt;\n\t&lt;a href=&quot;#p2&quot;&gt;Осень&lt;/a&gt;\n\t&lt;a href=&quot;#p3&quot;&gt;Зима&lt;/a&gt;\n\t&lt;a href=&quot;#p4&quot;&gt;Весна&lt;/a&gt;\n\t&lt;p id=&quot;p1&quot;&gt;...&lt;/p&gt;\n\t&lt;p id=&quot;p2&quot;&gt;...&lt;/p&gt;\n\t&lt;p id=&quot;p3&quot;&gt;...&lt;/p&gt;\n\t&lt;p id=&quot;p4&quot;&gt;...&lt;/p&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="\tЕсли нужно сделать ссылку с одной страницы сайта на определенный раздел другой страницы, то необходимо задать id для этого раздела страницы, а затем добавить его к абсолютному адресу ссылки: "
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:background="@drawable/console_style"
+                android:fontFamily="@font/lucidaconsole"
+                android:text="\t&lt;th id=&quot;about-color&quot;&gt;color&lt;/th&gt;\n\t&lt;a href=&quot;https://html5book.ru/&quot; class=&quot;site&quot; target=&quot;_blank&quot;&gt;color&lt;/a&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonend"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Завершить "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonback6"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_alternates"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

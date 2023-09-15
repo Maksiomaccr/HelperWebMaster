@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".Elements">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Элементы. Анатомия элементов"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/elements"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/click"
+                android:layout_weight="1"
+                android:background="@drawable/console_style"
+                android:fontFamily="@font/lucidaconsole"
+                android:padding="10dp"
+                android:text="\t &lt;p&gt;Я люблю котиков&lt;/p&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="24dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv3"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t Главными частями элемента является:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv4"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="\t Двойной тег обязательно должен быть закрыт."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv5"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t 1.	Открывающий тег (в данном случае &lt;p&gt;): состоит из имени элемента, заключённого в открывающие и закрывающие угловые скобки. Открывающий тег указывает, где элемент начинается или начинает действовать, в данном случае — где начинается абзац."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv6"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t 2.	Закрывающий тег (в данном случае &lt;/p&gt;): это то же самое, что и открывающий тег, за исключением того, что он включает в себя косую черту перед именем элемента. Закрывающий элемент указывает, где элемент заканчивается, в данном случае — где заканчивается абзац."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv7"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t 3. Контент (в данном случае текст заключённый в теги): это контент элемента, который в данном случае является просто текстом."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv8"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t 4. Элемент (в данном случае вся строчка кода): открывающий тег, закрывающий тег и контент вместе составляют элемент."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv9"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\t Также можно размещать элементы внутри других элементов — это называется вложением. Например:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/click"
+                android:id="@+id/tv10"
+                android:fontFamily="@font/lucidaconsole"
+                android:padding="10dp"
+                android:background="@drawable/console_style"
+                android:text="\t &lt;p&gt; Я &lt;strong&gt;очень&lt;/strong&gt; люблю котиков &lt;/p&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonnext3"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/buttonback2"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

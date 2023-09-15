@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Design.DesignPrinciples">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Принципы"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tЮзабилити, удобство использования, — эргономическая характеристика степени удобности предмета для применения пользователями при достижении определенных целей в некотором контексте."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\tЮзабилити:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t1. Не заставляйте пользователей думать."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВеб-страница должна быть очевидной. Когда вы создаете дизайн, ваш главная задача — избавится от вопросов — все решения пользователи должны принимать осознанно, учитывая плюсы, минусы и альтернативы.\n\t
+Если навигация и структура сайта не интуитивны, количество возникающих вопросов возрастает и пользователям становится сложнее понять, как работает система и как добраться из точки А в точку Б. Ясная структура, правильные визуальные подсказки и легко распознаваемые ссылки помогут пользователям найти путь к их цели."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t2. Не испытывайте терпение пользователей"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВ каждом проекте, где вы собираетесь предложить вашим посетителям какой-либо сервис, постарайтесь свести к минимуму требования к пользователю. Чем меньше действий требуется от пользователя для того, чтобы попробовать ваш сервис, тем больше вероятность что случайный посетитель на самом деле попробует его в действии. Посетители, зашедшие на сайт первый раз, хотят попробовать сервис, а не заполнять длинные формы для создания аккаунта, который они может и вовсе не будут использовать.\n\tДайте пользователям возможность побродить по сайту и попробовать пользоваться вашим сервисом без “вытягивания” из них личных данных."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t3. Стремитесь показать наиболее значимые вещи"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСовременные веб-дизайны часто подвергаются критике за свой подход в использовании “шагов” (сродни 1-2-3-готово!), огромных кнопок, кучи эффектов и т.п. Но с точки зрения дизайна такие элементы не настолько уж и плохи. Напротив, такие элементы очень эффективны, т.к. они облегчают переход пользователей между частями сайта."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t4. Пишите эффективно"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВеб отличается от печатных изданий; необходимо уметь приспосабливать стиль написания к предпочтениям пользователей и способам просмотра через браузеры. Посетители не будут читать промо-тексты. Большие абзацы без картинок, без выделенных жирным или курсивом предложений будут пропускать. Преувеличения будут игнорировать.\n\tГоворите по делу."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t5. Стремитесь к простоте"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tПринцип &quot;делай проще&quot; должен быть основной целью дизайна сайта. Пользователи редко заходят на сайт, чтобы просто насладиться дизайном. Более того, в большинстве случаев они ищут нужную информацию, несмотря на дизайн. Стремитесь к простоте, не усложняйте."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t6. Эффективная коммуникация с помощью контента"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tПринцип использования &quot;визуального языка&quot; - контента, который пользователи видят на экране. Подробней принцип рассматривается в следующей теме."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:id="@+id/buttonend"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Завершить "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <Button
+            android:id="@+id/buttonback2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HTMLImage">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="HTML-изображения"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/image"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tHTML-изображения добавляются на веб-страницы с помощью элемента &lt;img&gt;. Использование графики делает веб-страницы визуально привлекательнее. Изображения помогают лучше передать суть и содержание веб-документа."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv3"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tЭлементы &lt;map&gt; и &lt;area&gt; позволяют создавать карты-изображения с активными областями."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv4"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tЭлемент &lt;img&gt; представляет изображение и его резервный контент, который добавляется с помощью атрибута alt. Так как элемент &lt;img&gt; является строчным, то рекомендуется располагать его внутри блочного элемента, например, &lt;p&gt; или &lt;div&gt;."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv5"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:padding="10dp"
+                android:text="\t&lt;img src=&quot;image.png&quot; alt=&quot;Пример кода&quot;&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv6"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tАдрес изображения также может указываться абсолютным или относительным путём."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv7"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tАбсолютный: url(http://site.ru/images/picture.png)\n\tОтносительный:\nurl(../image/picture.png)"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/buttonnext"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

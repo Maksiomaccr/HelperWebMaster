@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Design.DesignContent">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Что такое контент?"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tКонтент — это подборка тех материалов, из которых состоит сайт: изображения, видео, музыка и, конечно, тексты."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВажное условие для создания внятного сайта — сначала определиться с контентом: написать текст, подобрать картинки и фотографии и нарисовать прототип. Только после этого можно приступать к веб-дизайну."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\tПриемущества разработки контента в первую очередь:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t1. Создание понятной, интуитивной структуры.\n\t
+Если вы знаете, из чего должен состоять сайт, то можете отделить главное от второстепенного. Иерархия — ваше оружие. Каждый блок должен встать на свое место."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t2. Возможность придумать специальные приемы, работающие на контент.\n\t
+Если с самого начала попробовать воспроизвести структуру, просто набросав схему на бумаге, — становится ясно, какие моменты являются ключевыми.\n\t
+Сайт предусматривает множество ссылок на другие источники? Если сформулировать это сразу, можно придумать особенный графический ход для отображения ссылок — то есть сделать дизайн эффективным для подачи информации."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t3. Сайт получается ясным и четким.\n\t
+Идея работает, если вы можете рассказать ее своей бабушке и она поймет, что к чему. Это правило отлично работает для создания сайтов. Чем проще — тем эффективней. Но как раз простоты иногда сложнее всего добиться. Простой и понятный интерфейс получается в том случае, если приступить к его созданию уже сформулировав для себя — что, куда и откуда. И главное — зачем."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t4. Сокращается вероятность бесконечных поправок.\n\t
+Если вы делаете сайт для клиента, то важно прежде всего собрать всю информацию, которую он может предоставить — тексты, фотографии. Полнота информации не только поможет сформировать сам сайт, но и утвердить содержание с клиентом сразу, чтобы не вносить исправления в уже готовые страницы."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/buttonnext"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Дальше "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

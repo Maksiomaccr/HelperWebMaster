@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSSelectorsType4">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Виды селекторов.\nПсевдоклассы"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСелектор псевдокласса: Псевдоклассы — это классы, фактически не прикрепленные к HTML-элементам. Они позволяют применить CSS-правила к элементам при совершении события или подчиняющимся определенному правилу."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tПсевдоклассы характеризуют элементы со следующими свойствами:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\t:link — не посещенная ссылка;\n\t
+:visited — посещенная ссылка;\n\t
+:hover — любой элемент, по которому проводят курсором мыши;\n\t
+:focus — интерактивный элемент, к которому перешли с помощью клавиатуры или активировали посредством мыши;\n\t
+:active — элемент, который был активизирован пользователем;\n\t
+:valid — поля формы, содержимое которых прошло проверку в браузере на соответствие указанному типу данных;\n\t
+:invalid — поля формы, содержимое которых не соответствует указанному типу данных;\n\t
+:enabled — все активные поля форм;\n\t
+:disabled — заблокированные поля форм, т.е., находящиеся в неактивном состоянии;\n\t
+:in-range — поля формы, значения которых находятся в заданном диапазоне;\n\t
+:out-of-range — поля формы, значения которых не входят в установленный диапазон;\n\t
+:lang() — элементы с текстом на указанном языке;\n\t
+:not(селектор) — элементы, которые не содержат указанный селектор — класс, идентификатор, название или тип поля формы — :not([type=&quot;submit&quot;]);\n\t
+:target — элемент с символом #, на который ссылаются в документе;\n\t
+:checked — выделенные (выбранные пользователем) элементы формы.\n\t
+Селектор псевдоэлемента: используется для добавления содержимого, которое генерируется с помощью свойства content:\n\t
+:first-letter — выбирает первую букву каждого абзаца, применяется только к блочным элементам;\n\t
+:first-line — выбирает первую строку текста элемента, применяется только к блочным элементам;\n\t
+:before — вставляет генерируемое содержимое перед элементом;\n\t
+:after — добавляет генерируемое содержимое после элемента."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tДля более точного отбора элементов для форматирования можно использовать комбинации селекторов:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\ta[href][title] — выберет все ссылки, для которых заданы атрибуты href и title;\n\t
+img[alt*=&quot;css&quot;]:nth-of-type(even) — выберет все четные картинки, альтернативный текст которых содержит слово css."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonnext3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Далее "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/buttonback3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

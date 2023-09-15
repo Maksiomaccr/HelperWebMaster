@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".AtributesImage">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Атрибуты &lt;img&gt;"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tДля элемента &lt;img&gt; доступны следующие атрибуты:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv3"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\talt. Добавляет альтернативный текст для изображения. Выводится на месте появления изображения до его загрузки или при отключенной графике."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv4"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:padding="10dp"
+                android:text="\t&lt;img src=&quot;/image/logo.png&quot; alt=&quot;Описание изображения&quot;&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv5"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tcrossorigin. Позволяет загружать изображения с ресурсов другого домена с помощью CORS-запросов. Изображения, загруженные в холст с помощью CORS-запросов, могут быть использованы повторно. Допускаемые значения:\n\t  anonymous — Crossorigin запрос выполняется с помощью HTTP-заголовка, при этом учетные данные не передаются. Если сервер не даёт учетные данные серверу, с которого запрашивается контент, то изображение будет испорчено и его использование будет ограничено.\n\t  use-credentials — Crossorigin запрос выполняется с передачей учетных данных."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv6"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:padding="10dp"
+                android:text="\t&lt;img src=&quot;/image/logo.png&quot; crossorigin=&quot;anonymous&quot;&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv7"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\theight. Задаёт высоту изображения в пикселях (px)."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv8"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:drawableRight="@drawable/click"
+                android:padding="10dp"
+                android:text="\t&lt;img src=&quot;/image/logo.png&quot; height=&quot;250&quot;&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv9"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\twidth. Задаёт ширину изображения в пикселях (px)."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv10"
+                android:fontFamily="@font/lucidaconsole"
+                android:drawableRight="@drawable/click"
+                android:background="@drawable/console_style"
+                android:padding="10dp"
+                android:text="\t&lt;img src=&quot;/image/logo.png&quot; width=&quot;500&quot;&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/buttonnext1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <Button
+                android:id="@+id/buttonback1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>

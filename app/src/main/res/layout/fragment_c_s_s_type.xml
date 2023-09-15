@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSType">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Виды таблиц стилей"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВнешняя таблица стилей представляет собой текстовый файл с расширением .css, в котором находится набор CSS-стилей элементов. Файл создаётся в редакторе кода, так же как и HTML-страница. Внутри файла могут содержатся только стили, без HTML-разметки. Внешняя таблица стилей подключается к веб-странице с помощью элемента &lt;link&gt;, расположенного внутри раздела &lt;head&gt;&lt;/head&gt;. Такие стили работают для всех страниц сайта."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tК каждой веб-странице можно присоединить несколько таблиц стилей, добавляя последовательно несколько элементов &lt;link&gt;, указав в атрибуте media назначение данной таблицы стилей. rel=&quot;stylesheet&quot; указывает тип ссылки (ссылка на таблицу стилей)."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lucidaconsole"
+            android:padding="10dp"
+            android:background="@drawable/console_style"
+            android:text="\t&lt;head&gt;\n\t
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;\n\t
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/assets.css&quot; media=&quot;all&quot;&gt;\n
+&lt;/head&gt;
+        "
+            android:textColor="@color/ever_white"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВнутренние стили встраиваются в раздел &lt;head&gt;&lt;/head&gt; HTML-документа и определяются внутри элемента &lt;style&gt;&lt;/style&gt;. Внутренние стили имеют приоритет над внешними, но уступают встроенным стилям (заданным через атрибут style)."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lucidaconsole"
+            android:padding="10dp"
+            android:background="@drawable/console_style"
+            android:text="\t&lt;head&gt;\n\t
+&lt;style&gt; \n\t
+ h1,\n\t
+ h2 {\n\t
+ color: red; \n\t
+ font-family: &quot;Time New Roman&quot;,\n\t  Georgia, Serif;\n\t
+ line-height: 1.3em;\n\t
+ }\n\t
+&lt;/style&gt;\n
+&lt;/head&gt;
+        "
+            android:textColor="@color/ever_white"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tКогда мы пишем встроенные стили, мы пишем CSS-код в HTML-файл, непосредственно внутри элемента с помощью атрибута style:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lucidaconsole"
+            android:padding="10dp"
+            android:background="@drawable/console_style"
+            android:text="\t&lt;p style=&quot;font-weight: bold; color: red;&quot;&gt;Обратите внимание на этот текст.&lt;/p&gt;"
+            android:textColor="@color/ever_white"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tТакие стили действуют только на тот элемент, для которого они заданы."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonnext2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Дальше "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/buttonback2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

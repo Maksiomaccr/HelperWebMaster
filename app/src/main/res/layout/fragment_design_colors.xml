@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Design.DesignColors">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Значения цветов"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t1. Розовый"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tРозовый станет отличной опцией, если ваша целевая аудитория преимущественно состоит из женщин. Он ассоциируется с радостью и романтикой, а также юностью и женственностью. Этот игривый цвет напоминает о жевательной резинке и невинности. Вы не ошибетесь, выбрав его, если сайт имеет ретро-тематику или ориентирован на женскую аудиторию."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t2. Синий"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСиний цвет ассоциируется с надежностью и создает ощущение прохлады. Он отлично подойдет для сайтов, где пользователи получают рецепты на лекарства, переводят денежные средства или совершают любые другие операции, требующие определенной степени доверия."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t3. Красный"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tНикакой другой цвет не способен так привлечь внимание человека, как красный. Именно поэтому его считают одним из наиболее эффективных для обозначения призыва к действию. Если в вашем проекте есть кнопка “Действуйте прямо сейчас”, не задумываясь выбирайте для нее красный цвет.\n\t
+Он будоражит, возбуждает и бодрит. Красный ассоциируется со страстью, властью и иногда гневом. Его часто используют для обозначения предупреждений или опасности, однако этот цвет также может символизировать силу, решимость и смелость.\n\t
+Теплые оттенки красного, к примеру, кирпичные или бордовые, действуют успокаивающе и обладают особой силой. Это прекрасный выбор для компании, которая хочет показать, что она является надежной и долговечной, прямо как кирпичная стена. Яркие красные оттенки, например, “настоящий красный” или томатный, будут отлично смотреться на молодежных сайтах, выражающих энергию и решительность."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t4. Зеленый"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tЗеленый — это цвет умиротворения и природы. Глядя на него, пользователи успокаиваются, восстанавливаются, испытывают положительные эмоции. Темные оттенки часто ассоциируются с деньгами, поэтому их обычно используют бренды, которые обещают клиентам процветание, рост и стабильность. Светлые — с весной и развитием: они транслируют расслабление, свежесть и искренность.\n\t
+Поэтому, если ваш сайт посвящен какой-то экологической проблеме или продаже органических продуктов, смело выбирайте для фона зеленый цвет."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t5. Желтый"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tВ маркетинге желтый цвет символизирует здоровую психику без тревожных и депрессивных мыслей. Он лучше всего подходит для оформления интернет-магазинов, где продаются игрушки и детская одежда. Кроме того, желтый зачастую воспринимается как цвет предостережения.\n\t
+Многие считают, что желтый цвет является самым энергичным. Люди с детства привыкают ассоциировать его с солнцем, теплом и счастьем. Именно поэтому он идеально подходит для сайтов, целевой аудиторией которых являются дети, поскольку он сразу привлекает их внимание.\n\t
+Нежные оттенки желтого вызывают более сложные ассоциации. Темные — могут указывать на значительный возраст, богатую историю, поскольку напоминают пожелтевший пергамент. С помощью подобных оттенков дизайнер может отразить мудрость или вызывать любопытство. Желтый станет отличной опцией для брендов, которые хотят выглядеть авторитетно и интеллигентно."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t6. Фиолетовый"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tФиолетовый цвет излучает элегантность и утонченность. Он идеально подойдет для сайта, на котором представлены нишевые и люксовые продукты."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t7. Оранжевый"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tОранжевый также может выглядеть изысканно, в то же время он привлекает внимание пользователей. Этот цвет является более сбалансированным и менее вызывающим, чем красный. Яркий, активный, дружелюбный и уютный, он идеально подходит для проектов, в которых требуется показать движение и энергию.\n\t
+Оранжевый зачастую выбирают бренды, желающие продемонстрировать свою креативность, ведь это уникальный и интересный цвет, который остается теплым и создает ощущение комфорта. Фон оранжевого цвета отлично смотрится на сайтах технологических компаний, деятельность которых связана с гаджетами."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t8. Золотой"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv18"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tЗолотой — цвет драгоценного металла, символизирующий власть и престиж. Он прекрасно сочетается с другими элегантными цветами, например, зеленым и фиолетовым."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv19"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t9. Черный"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tЧерный — универсальный цвет, который гармонично смотрится в комбинации с любыми другими оттенками. Лучше всего он подходит для создания контраста с остальными цветами на сайте."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="\t10. Коричневый"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tКоричневый — неприметный цвет, который успокаивает и расслабляет пользователей. Его часто можно встретить на сайтах компаний, деятельность которых связана с поддержанием здорового образа жизни.\n\t
+Кремовые оттенки — спокойные, элегантные, чистые. Они подойдут для фона, если бренд хочет выглядеть традиционно. Темно-бежевые оттенки — консервативные, символизируют почтительность и благочестие. Кому то они могут показаться скучными, а кого-то будут успокаивать, поэтому на них следует остановить свой выбор, если хочется сделать сайт не слишком смелым или бросающимся в глаза.\n\t
+Темно-коричневый цвет выглядит надежным и безопасным, как буханка хлеба. Он ассоциируется с теплом и уютом. Его используют компании, которые хотят продемонстрировать свой опыт и показать, что на них можно положиться."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/buttonend"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Завершить "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <Button
+            android:id="@+id/buttonback2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

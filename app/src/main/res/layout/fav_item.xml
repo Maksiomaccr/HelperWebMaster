@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="@color/card_color"
+    android:elevation="3dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp">
+
+    <ImageView
+        android:id="@+id/fav_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/htmltext" />
+
+    <TextView
+        android:id="@+id/title_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:text="cdsc"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+
+    <Button
+        android:id="@+id/favBtn"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|end"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/delete"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_fav"
+        android:layout_width="240dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:text="dsfvdf"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+
+
+
+</androidx.cardview.widget.CardView>

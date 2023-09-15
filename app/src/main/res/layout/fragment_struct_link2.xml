@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".StructLink2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Структура ссылки\n"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:paddingStart="10dp"
+            android:text="\tURL в общем виде выглядит так: метод доступа://имя сервера:порт/путь"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv2"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:paddingStart="10dp"
+            android:text="\tМетод доступа, или протокол, осуществляет обмен данными между рабочими станциями в разных сетях. "
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv3"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:paddingStart="10dp"
+            android:text="\tИмя сервера описывает полное имя машины в сети. Если имя сервера не указано, то ссылка считается локальной, т.е. она относится к той же машине, на которой находится HTML-документ, содержащий ссылку."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv4"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:paddingStart="10dp"
+            android:text="\tНомер порта ТСР, на котором функционирует веб-сервер, представляет собой число, которое необходимо указывать, если метод требует номер порта. Если порт не указан, по умолчанию используется порт 80."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv5"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:paddingStart="10dp"
+            android:text="\tПуть содержит имя папки, в которой находится файл."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="\tНемного о протоколах."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/tap"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv7"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/tap" />
+
+        <RelativeLayout
+            android:id="@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tap">
+
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="400sp"
+                android:layout_height="250sp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:layout_below="@id/videoview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/buttonnext2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:text="Дальше"
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+
+
+        <Button
+            android:layout_below="@id/buttonnext2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/buttonback2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:text="Назад"
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

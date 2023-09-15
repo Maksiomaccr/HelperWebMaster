@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSLineBreak2">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Разрыв строки\nи границы слов\n(продолжение)"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСвойство hyphens определяет, разрешено ли использование переносов для создания возможностей мягкого переноса внутри строки текста."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tРасстановка переносов — это контролируемое разбиение слов, при котором им обычно не разрешается разрываться, чтобы улучшить расположение абзацев. Как правило, разбиение слов происходит по слоговым или морфемным границам и при визуальном указании на разделение (обычно путем вставки дефиса, ‐). В некоторых случаях переносы могут также изменить написание слова. В любом случае, перенос слов является только эффектом рендеринга: он не должен влиять ни на содержимое документа, ни на выбор текста или поиск.\n\tСвойство наследуется."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tnone: Слова не переносятся, даже если символы внутри слова явно определяют возможности переноса.\n\t
+manual: Слова переносятся только в тех местах, где внутри слова есть символы, которые явно указывают на возможность переноса слов. Значение по умолчанию.\n\t
+auto: Слова могут быть разбиты на возможности переноса, определяемые автоматически соответствующим языку ресурсом переноса в дополнение к тем, которые явно указаны условным дефисом. Необходимо задать язык своего контента (например, используя HTML-атрибут lang или заголовок HTTP Content-Language), чтобы получить правильный автоматический перенос слов.\n\t
+initial: Устанавливает значение свойства в значение по умолчанию.\n\t
+inherit: Наследует значение свойства от родительского элемента.\n\t"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tСвойство overflow-wrap (или его устаревшее имя word-wrap) указывает, может ли неразрывная строка прерваться в неразрешенных точках, чтобы предотвратить переполнение линейного блока. Работает в том случае, когда свойство white-space разрешает перенос.\n\tСвойство наследуется."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tnormal: Неразрывные строки могут разрываться только в разрешенных точках разрыва. Значение по умолчанию.\n\t
+break-word\n\t
+anywhere: Неразрывная последовательность символов может быть разбита в произвольной точке, если в строке нет других приемлемых точек разрыва. Влияет только на визуальное отображение, не затрагивая исходный текст. В точке разрыва строки символ переноса не добавляется. Возможности мягкого переноса, представленные в любом месте, учитываются при расчете собственных размеров минимального содержимого.\n\t
+initial: Устанавливает значение свойства в значение по умолчанию.\n\t
+inherit: Наследует значение свойства от родительского элемента.\n\t"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonnext5"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Далее "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <Button
+            android:id="@+id/buttonback5"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

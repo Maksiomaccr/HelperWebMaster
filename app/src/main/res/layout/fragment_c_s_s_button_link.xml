@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CSS.CSSButtonLink">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="Ссылки-кнопки"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_alternates"
+            android:padding="10dp"
+            android:text="\tБлагодаря свойствам background-color, border и padding, ссылкам можно придать вид прямоугольных кнопок, а, меняя отображение тех или иных свойств ссылок при наведении курсора мыши a:hover, добавить интересные эффекты."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_link" />
+
+
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/lucidaconsole"
+            android:background="@drawable/console_style"
+            android:padding="10dp"
+            android:text="\ta {\n\t
+  border-radius: 10px;\n\t
+  color: #EC4D3C;\n\t
+  background-color: white;\n\t
+  background-image: \n\t   -webkit-radial-gradient(#FCD2D1 \n\t   2px, rgba(255, 0, 0, 0) 2px);\n\t
+  background-image:\n\t   -o-radial-gradient(#FCD2D1 2px,\n\t   rgba(255, 0, 0, 0) 2px);\n\t
+  background-image:\n\t   radial-gradient(#FCD2D1 2px,\n\t   transparent 2px);\n\t
+  background-size: 12px 12px;\n\t
+  box-shadow: 2px 2px 3px rgba(0,\n\t   0, 0, 0.3);\n
+}\n
+a:hover {\n\t
+  background-size: 16px 16px;\n
+}
+"
+            android:textColor="@color/ever_white"
+            android:textSize="18dp" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/buttonend"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Завершить "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <Button
+            android:id="@+id/buttonback3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_alternates"
+            android:onClick="ChangeFragment"
+            android:text=" Назад "
+            android:textAllCaps="false"
+            android:textColor="@color/ever_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

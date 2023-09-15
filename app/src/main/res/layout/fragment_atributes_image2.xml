@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_corner_view"
+    tools:context=".AtributesImage2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="Атрибуты &lt;img&gt;"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tismap. указывает на то, что картинка является частью изображения-карты, расположенного на сервере. При нажатии на изображение-карту координаты передаются на сервер в виде строки запроса URL-адреса. Атрибут ismap допускается только в случае, если элемент &lt;img&gt; является потомком элемента &lt;a&gt; с действительным атрибутом href."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv4"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:padding="10dp"
+                android:text="\t&lt;p&gt;&lt;a href=&quot;http://www.site.ru/example/ismap.php&quot;&gt;&lt;img src=&quot;images.png&quot; ismap&gt;&lt;/a&gt;&lt;/p&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv5"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tlongdesc. URL расширенного описания изображения, дополняющее атрибут alt."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv6"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:padding="10dp"
+                android:text="\t&lt;img src=&quot;/image/logo.png&quot; longdesc=&quot;http://www.example.com/description.txt&quot;&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv7"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tsrcset. Создаёт список источников для изображения, которые будут выбраны, исходя из разрешения экрана. Может использоваться вместе или вместо атрибута src. Значением атрибута является одна или несколько строк, разделенных запятой."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv8"
+                android:fontFamily="@font/lucidaconsole"
+                android:background="@drawable/console_style"
+                android:padding="10dp"
+                android:text="\t&lt;img src=&quot;flower.jpg&quot;\n\tsrcset=&quot;\n\timg/flower-mobile.jpg 320w,\n\timg/flower-wide-mobile.jpg 480w,\n\timg/flower-tablet.jpg 768w,\n\timg/flower-desktop.jpg 1024w,\n\timg/flower-hires.jpg 1280w&quot;\n\tsizes=&quot;\n\t(max-width: 20em) 30vw,\n\t(max-width: 30em) 60vw,\n\t(max-width: 40em) 90vw&quot;&gt;"
+                android:textColor="@color/ever_white"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv9"
+                android:fontFamily="@font/montserrat_alternates"
+                android:padding="10dp"
+                android:text="\tsizes. Задаёт размер изображения в зависимости от параметров отображения. Работает только при заданном атрибуте srcset. Значением атрибута является одна или несколько строк, указанных через запятую."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/buttonnext2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Дальше "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <Button
+                android:id="@+id/buttonback2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text=" Назад "
+                android:textColor="@color/ever_white"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+</ScrollView>
